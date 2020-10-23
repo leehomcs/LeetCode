@@ -11,3 +11,8 @@ class Solution(object):
             if lookup[c] < k:
                 return max(self.longestSubstring(t, k) for t in s.split(c))
         return len(s)
+
+if __name__ == '__main__':
+    s = "abacbbbc"
+    S = Solution()
+    print(S.longestSubstring(s,3))
