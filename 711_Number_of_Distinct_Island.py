@@ -34,6 +34,8 @@ class Solution:
     return len(islands)
 
 if __name__ == '__main__':
+  # https://www.cnblogs.com/grandyang/p/8542820.html
+  # https://www.jiuzhang.com/solution/number-of-distinct-islands-ii/
     solution = Solution()
     grid = [[1,1,0,0,0],[1,0,0,0,0],[0,0,0,0,1],[0,0,0,1,1]]
     print(solution.numDistinctIslands2(grid))
