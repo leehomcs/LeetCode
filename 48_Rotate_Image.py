@@ -7,7 +7,7 @@ class Solution:
     cols = len(matrix[0])
     for i in range(rows // 2):
       for j in range(cols):
-        matrix[i][j], matrix[rows - i - 1][j] = matrix[rows - i - 1][j], matrix[i][j]
+        matrix[i][j] = matrix[rows - i - 1][j]
     for i in range(rows):
       for j in range(i):
         if i == j:
